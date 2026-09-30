@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="mn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаборатори 02 - Оюутны анкет</title>
+</head>
+
+<body>
+
+    <!-- Вэбийн толгой хэсэг -->
+    <header>
+        <h1>Оюутны Мэдээллийн Портал</h1>
+        <!-- Навигацийн цэс -->
+        <nav>
+            <ul>
+                <li><a href="../index.html">Нүүр</a></li>
+                <li><a href="#anket">Анкет</a></li>
+                <li><a href="#interest">Миний сонирхол</a></li>
+                <li><a href="#grades">Миний дүн</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Үндсэн контент -->
+    <main>
+        <article>
+            <section id="anket">
+                <h2>Хэрэглэгчийн Анкет Бөглөх</h2>
+                <p>Доорх формын дагуу мэдээллээ бүрэн, үнэн зөв зааж бөглөнө үү.</p>
+
+                <form action="#" method="POST" enctype="multipart/form-data">
+
+                    <!-- 1-р бүлэг: Хувийн мэдээлэл -->
+                    <fieldset>
+                        <legend>Хувийн мэдээлэл</legend>
+
+                        <label for="lastname">Овог:</label><br>
+                        <input type="text" id="lastname" name="lastname" placeholder="Идэртөгс" minlength="2" required>
+                        <br><br>
+
+                        <label for="firstname">Нэр:</label><br>
+                        <input type="text" id="firstname" name="firstname" placeholder="Болдбаатар" minlength="2" required>
+                        <br><br>
+
+                        <label for="email">Цахим хаяг (Email):</label><br>
+                        <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                        <br><br>
+
+                        <label for="password">Нууц үг:</label><br>
+                        <input type="password" id="password" name="password" minlength="6" placeholder="Доод тал нь 6 тэмдэгт" required>
+                        <br><br>
+
+                        <label for="phone">Утасны дугаар:</label><br>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{8}" placeholder="88112233" required>
+                        <br>
+                        <small>Зөвхөн 8 оронтой тоо оруулна уу.</small>
+                        <br><br>
+
+                        <label for="birthdate">Төрсөн огноо:</label><br>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                        <br><br>
+
+                        <label>Хүйс:</label><br>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Эрэгтэй</label>
+
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Эмэгтэй</label>
+                    </fieldset>
+
+                    <br>
+
+                    <!-- 2-р бүлэг: Сургалт ба Боловсрол -->
+                    <fieldset>
+                        <legend>Боловсрол ба Сургалтын мэдээлэл</legend>
+
+                        <label for="school">Сургууль:</label><br>
+                        <input type="text" id="school" name="school" value="ШУТИС" required>
+                        <br><br>
+
+                        <label for="major">Мэргэжил:</label><br>
+                        <input type="text" id="major" name="major" value="Кибер аюулгүй байдал" minlength="3" required>
+                        <br><br>
+
+                        <label for="course">Курс:</label><br>
+                        <select id="course" name="course" required>
+                            <option value="">-- Курс сонгоно уу --</option>
+                            <option value="1">1-р курс</option>
+                            <option value="2" selected>2-р курс</option>
+                            <option value="3">3-р курс</option>
+                            <option value="4">4-р курс</option>
+                        </select>
+                        <br><br>
+
+                        <label for="degree">Суралцаж буй түвшин:</label><br>
+                        <select id="degree" name="degree" required>
+                            <option value="">-- Сонгоно уу --</option>
+                            <option value="bachelor" selected>Бакалавр</option>
+                            <option value="master">Магистр</option>
+                            <option value="doctor">Докторант</option>
+                        </select>
+                        <br><br>
+
+                        <label>Суралцах хэлбэр:</label><br>
+                        <input type="radio" id="day" name="study" value="day" required checked>
+                        <label for="day">Өдрийн</label>
+
+                        <input type="radio" id="evening" name="study" value="evening">
+                        <label for="evening">Оройн</label>
+                    </fieldset>
+
+                    <br>
+
+                    <!-- 3-р бүлэг: Технологийн сонирхол -->
+                    <fieldset>
+                        <legend>Технологийн сонирхол ба ур чадвар</legend>
+
+                        <label>Сонирхож буй технологиуд:</label><br><br>
+
+                        <input type="checkbox" id="html" name="skills" value="HTML">
+                        <label for="html">HTML5 / CSS3</label><br>
+
+                        <input type="checkbox" id="python" name="skills" value="Python">
+                        <label for="python">Python</label><br>
+
+                        <input type="checkbox" id="java" name="skills" value="Java">
+                        <label for="java">Java</label><br>
+
+                        <input type="checkbox" id="network" name="skills" value="Network">
+                        <label for="network">Компьютерийн сүлжээ</label><br>
+
+                        <input type="checkbox" id="security" name="skills" value="Cybersecurity">
+                        <label for="security">Кибер аюулгүй байдал</label><br><br>
+
+                        <label for="english">Англи хэлний түвшин:</label><br>
+                        <select id="english" name="english">
+                            <option value="">-- Сонгоно уу --</option>
+                            <option value="beginner">Анхан шат</option>
+                            <option value="intermediate">Дунд шат</option>
+                            <option value="advanced">Ахисан шат</option>
+                        </select>
+                    </fieldset>
+
+                    <br>
+
+                    <!-- 4-р бүлэг: Нэмэлт мэдээлэл -->
+                    <fieldset>
+                        <legend>Нэмэлт мэдээлэл</legend>
+
+                        <label for="avatar">Профайл зураг оруулна уу:</label><br>
+                        <input type="file" id="avatar" name="avatar" accept="image/*">
+                        <br><br>
+
+                        <label for="bio">Товч танилцуулга / Өөрийн тухай:</label><br>
+                        <textarea id="bio" name="bio" rows="4" cols="50" minlength="10" placeholder="Өөрийн танилцуулгыг энд бичнэ үү..." required></textarea>
+                        <br><br>
+
+                        <label for="goal">Ирээдүйн зорилго:</label><br>
+                        <textarea id="goal" name="goal" rows="4" cols="50" placeholder="Ирээдүйд хүрэхийг хүсэж буй зорилгоо бичнэ үү..."></textarea>
+                    </fieldset>
+
+                    <br>
+
+                    <!-- Сонирхлын жагсаалт -->
+                    <section id="interest">
+                        <h2>Миний сонирхол</h2>
+                        <p>Чөлөөт цагаараа дараах зүйлсийг хийх дуртай:</p>
+                        <ul>
+                            <li>Кибер аюулгүй байдлын талаар судлах</li>
+                            <li>Веб хөгжүүлэлт болон программчлал сурах</li>
+                            <li>Ном унших ба волейбол тоглох</li>
+                        </ul>
+                    </section>
+
+                    <br>
+
+                    <!-- Дүнгийн хүснэгт -->
+                    <section id="grades">
+                        <h2>Миний дүн</h2>
+                        <table border="1">
+                            <thead>
+                                <tr>
+                                    <th>№</th>
+                                    <th>Хичээлийн нэр</th>
+                                    <th>Дүн</th>
+                                    <th>Үнэлгээ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Веб зохиомж</td>
+                                    <td>95</td>
+                                    <td>A</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Программчлалын үндэс</td>
+                                    <td>95</td>
+                                    <td>A</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Сэтгэл судлал</td>
+                                    <td>100</td>
+                                    <td>A+</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Хэл ярианы соёл</td>
+                                    <td>93</td>
+                                    <td>A</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <br>
+
+                    <!-- Баталгаажуулалт -->
+                    <fieldset>
+                        <legend>Баталгаажуулалт</legend>
+                        <input type="checkbox" id="confirm" name="confirm" required>
+                        <label for="confirm">Миний оруулсан мэдээлэл үнэн зөв болохыг баталгаажуулж байна.</label>
+                    </fieldset>
+
+                    <br>
+
+                    <button type="submit">Анкет Илгээх</button>
+                    <button type="reset">Дахин эхлүүлэх</button>
+
+                </form>
+            </section>
+        </article>
+    </main>
+
+    <!-- Хөл хэсэг -->
+    <footer>
+        <p>&copy; 2026 ШУТИС - Кибер аюулгүй байдлын оюутны анкет</p>
+        <p>Веб зохиомж хичээл - Лабораторийн ажил 02</p>
+    </footer>
+
+</body>
+
+</html>
