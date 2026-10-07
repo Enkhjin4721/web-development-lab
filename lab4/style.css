@@ -1,0 +1,202 @@
+css
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111827;
+    color: #e5e7eb;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #172554, #312e81);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+    box-shadow: 0 8px 0 #080d1c;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.header p {
+    margin-top: 10px;
+    font-size: 17px;
+    color: #c7d2fe;
+}
+
+/* Navigation - Flexbox */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    background: #1e293b;
+    padding: 18px;
+    box-shadow: 0 5px 0 #0b1120;
+}
+
+.navbar a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.navbar a:hover {
+    background: #6366f1;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 0 #3730a3;
+}
+
+/* Main Layout - Grid */
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 270px;
+    gap: 25px;
+    max-width: 1150px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+/* Main */
+.main {
+    background: #1e293b;
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 9px 0 #0b1120;
+}
+
+.main h2 {
+    margin-top: 0;
+    color: #f1f5f9;
+    border-left: 6px solid #818cf8;
+    padding-left: 12px;
+}
+
+/* Movie Grid */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+/* Movie Card */
+.movie-card {
+    background: #273449;
+    border: 1px solid #3b4a63;
+    border-radius: 14px;
+    padding: 15px;
+    box-shadow: 0 7px 0 #0f172a;
+    transition: 0.25s;
+}
+
+.movie-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 22px rgba(79, 70, 229, 0.35);
+}
+
+/* Movie Poster */
+.movie-image {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: block;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+}
+
+/* Movie Text */
+.movie-card h3 {
+    color: #f8fafc;
+    margin: 8px 0;
+    font-size: 20px;
+}
+
+.movie-card p {
+    color: #b6c2d1;
+    line-height: 1.5;
+}
+
+.movie-card a {
+    color: #818cf8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.movie-card a:hover {
+    color: #a5b4fc;
+}
+
+/* Sidebar */
+.sidebar {
+    background: #1e293b;
+    padding: 22px;
+    border-radius: 16px;
+    height: fit-content;
+    border-top: 6px solid #6366f1;
+    box-shadow: 0 9px 0 #0b1120;
+}
+
+.sidebar h2 {
+    color: #f1f5f9;
+    border-bottom: 2px solid #3b4a63;
+    padding-bottom: 8px;
+}
+
+.sidebar ul {
+    padding-left: 20px;
+}
+
+.sidebar li {
+    margin-bottom: 12px;
+    color: #cbd5e1;
+}
+
+.sidebar p {
+    color: #aeb9c8;
+    line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(135deg, #172554, #312e81);
+    color: #c7d2fe;
+    text-align: center;
+    padding: 24px;
+    margin-top: 30px;
+    box-shadow: 0 -6px 0 #080d1c;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .movie-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .movie-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
