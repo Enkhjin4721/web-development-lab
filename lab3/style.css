@@ -1,0 +1,224 @@
+css
+/* Бүх элементэд box sizing өгсөн */
+* {
+    box-sizing: border-box;
+}
+
+/* Үндсэн хэсэг */
+body {
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: #f2f6fc;
+    color: #333;
+}
+
+
+/* Header */
+.header {
+    background-color: #2563eb;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-title {
+    color: white;
+    margin: 0 0 15px 0;
+}
+
+
+/* Navigation */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+/* Гол хэсэг */
+.container {
+    width: 80%;
+    margin: 30px auto;
+}
+
+
+/* Form-ийн үндсэн хайрцаг */
+.form-card {
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+
+/* Гарчгийн хэсэг */
+.title-box {
+    position: relative;
+    padding: 10px;
+    border-bottom: 2px solid #2563eb;
+    margin-bottom: 15px;
+}
+
+.section-title {
+    color: #2563eb;
+    margin: 10px 0;
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+
+/* Position relative + absolute жишээ */
+.badge {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    background-color: #ef4444;
+    color: white;
+
+    padding: 5px 10px;
+    border-radius: 15px;
+
+    font-size: 12px;
+}
+
+
+/* Form хэсгүүд */
+.form-fieldset {
+    margin-bottom: 20px;
+    padding: 20px;
+
+    border: 1px solid #bbb;
+    border-radius: 8px;
+}
+
+.form-fieldset legend {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+
+/* Талбарууд */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #aaa;
+    border-radius: 5px;
+
+    font-family: inherit;
+}
+
+
+/* Radio болон checkbox */
+.option-group,
+.checkbox-group {
+    margin-bottom: 15px;
+}
+
+.option-group label,
+.checkbox-group label {
+    margin-right: 15px;
+}
+
+.small-title {
+    font-weight: bold;
+}
+
+
+/* Сонирхол болон дүн */
+.info-card {
+    margin-top: 25px;
+    padding: 20px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    background-color: #f8fafc;
+}
+
+.info-card li {
+    margin-bottom: 8px;
+}
+
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    border: 1px solid #aaa;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #2563eb;
+    color: white;
+}
+
+
+/* Баталгаажуулалт */
+.confirm-box {
+    margin: 20px 0;
+    padding: 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+/* Товчнууд */
+.button-group {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 5px;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.submit-btn {
+    background-color: #2563eb;
+    color: white;
+}
+
+.reset-btn {
+    background-color: #777;
+    color: white;
+}
+
+
+/* Footer */
+.footer {
+    margin-top: 30px;
+    padding: 15px;
+
+    text-align: center;
+    background-color: #2563eb;
+    color: white;
+}

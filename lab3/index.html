@@ -1,0 +1,249 @@
+```html
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Лаборатори 03 - Оюутны анкет</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1 class="main-title">Миний Оюутны Анкет</h1>
+
+        <nav class="navbar">
+            <a href="#home">Нүүр</a>
+            <a href="#form">Анкет</a>
+            <a href="#interest">Сонирхол</a>
+            <a href="#grades">Дүн</a>
+        </nav>
+    </header>
+
+
+    <!-- Main -->
+    <main class="container" id="home">
+
+        <section class="form-card" id="form">
+
+            <div class="title-box">
+                <h2 class="section-title">Хэрэглэгчийн Анкет Бөглөх</h2>
+
+                <!-- position relative / absolute жишээ -->
+                <span class="badge">LAB 03</span>
+            </div>
+
+            <p class="description">
+                Доорх хэсгүүдийг бөглөж оюутны анкетийн мэдээллээ оруулна уу.
+            </p>
+
+
+            <!-- Хувийн мэдээлэл -->
+            <fieldset class="form-fieldset">
+                <legend>Хувийн мэдээлэл</legend>
+
+                <div class="form-group">
+                    <label for="fname">Нэр:</label>
+                    <input type="text" id="fname" name="fname">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">И-мэйл:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Нууц үг:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+
+                <div class="form-group">
+                    <label for="birth">Төрсөн огноо:</label>
+                    <input type="date" id="birth" name="birth">
+                </div>
+
+                <div class="form-group">
+                    <label for="photo">Зураг оруулах:</label>
+                    <input type="file" id="photo" name="photo">
+                </div>
+            </fieldset>
+
+
+            <!-- Боловсрол -->
+            <fieldset class="form-fieldset">
+                <legend>Боловсрол</legend>
+
+                <div class="form-group">
+                    <label for="school">Сургууль:</label>
+                    <input type="text" id="school" name="school">
+                </div>
+
+                <div class="form-group">
+                    <label for="major">Мэргэжил:</label>
+                    <input type="text" id="major" name="major">
+                </div>
+
+                <div class="form-group">
+                    <label for="year">Курс:</label>
+
+                    <select id="year" name="year">
+                        <option value="1">1-р курс</option>
+                        <option value="2">2-р курс</option>
+                        <option value="3">3-р курс</option>
+                        <option value="4">4-р курс</option>
+                    </select>
+                </div>
+            </fieldset>
+
+
+            <!-- Технологийн сонирхол -->
+            <fieldset class="form-fieldset">
+                <legend>Технологийн сонирхол</legend>
+
+                <p class="small-title">Сонирхож байгаа чиглэл:</p>
+
+                <div class="option-group">
+                    <label>
+                        <input type="radio" name="technology" value="programming">
+                        Программчлал
+                    </label>
+
+                    <label>
+                        <input type="radio" name="technology" value="web">
+                        Вэб хөгжүүлэлт
+                    </label>
+
+                    <label>
+                        <input type="radio" name="technology" value="security">
+                        Кибер аюулгүй байдал
+                    </label>
+                </div>
+
+                <p class="small-title">Нэмэлт сонирхол:</p>
+
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="interest" value="network">
+                        Компьютерийн сүлжээ
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interest" value="newtech">
+                        Шинэ технологи
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interest" value="book">
+                        Ном унших
+                    </label>
+                </div>
+            </fieldset>
+
+
+            <!-- Нэмэлт мэдээлэл -->
+            <fieldset class="form-fieldset">
+                <legend>Нэмэлт мэдээлэл</legend>
+
+                <div class="form-group">
+                    <label for="about">Өөрийн тухай:</label>
+                    <textarea id="about" name="about" rows="5"></textarea>
+                </div>
+            </fieldset>
+
+
+            <!-- Миний сонирхол -->
+            <section class="info-card" id="interest">
+                <h2 class="section-title">Миний сонирхол</h2>
+
+                <ul>
+                    <li>Кибер аюулгүй байдал</li>
+                    <li>Программчлал</li>
+                    <li>Вэб хөгжүүлэлт</li>
+                    <li>Компьютерийн сүлжээ</li>
+                    <li>Шинэ технологи судлах</li>
+                    <li>Волейбол</li>
+                    <li>Ном унших</li>
+                </ul>
+            </section>
+
+
+            <!-- Дүн -->
+            <section class="info-card" id="grades">
+                <h2 class="section-title">Миний дүн</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Хичээл</th>
+                            <th>Дүн</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Програмчлалын үндэс</td>
+                            <td>95</td>
+                        </tr>
+
+                        <tr>
+                            <td>Биеийн тамир</td>
+                            <td>95</td>
+                        </tr>
+
+                        <tr>
+                            <td>Сэтгэл судлал</td>
+                            <td>100</td>
+                        </tr>
+
+                        <tr>
+                            <td>Хэл ярианы соёл</td>
+                            <td>93</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+
+            <!-- Баталгаажуулалт -->
+            <section class="confirm-box">
+                <label>
+                    <input type="checkbox" name="confirm">
+                    Миний оруулсан мэдээлэл зөв болно.
+                </label>
+            </section>
+
+
+            <!-- Товч -->
+            <div class="button-group">
+                <button type="submit" class="btn submit-btn">
+                    Илгээх
+                </button>
+
+                <button type="reset" class="btn reset-btn">
+                    Цэвэрлэх
+                </button>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Наранцацралийн Энхжин</p>
+    </footer>
+
+</body>
+</html>
+```
