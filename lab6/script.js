@@ -1,14 +1,14 @@
+
 const themeButton = document.getElementById("themeButton");
 const flipButtons = document.querySelectorAll(".flipButton");
 
-// Load the saved theme
+// Change dark and light mode
 if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("dark");
 }
 
 updateThemeButton();
 
-// Change the theme
 themeButton.addEventListener("click", function () {
     document.body.classList.toggle("dark");
 
@@ -29,7 +29,7 @@ function updateThemeButton() {
     }
 }
 
-// Flip the movie cards
+// Flip movie cards
 flipButtons.forEach(function (button) {
     button.addEventListener("click", function () {
         const card = button.closest(".card");
