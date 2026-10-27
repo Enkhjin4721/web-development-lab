@@ -1,6 +1,9 @@
 
+@use 'sass:map';
+@use 'tokens' as t;
+
 @mixin respond($size) {
-  @media (max-width: $size) {
+  @media (max-width: map.get(t.$breakpoints, $size)) {
     @content;
   }
 }

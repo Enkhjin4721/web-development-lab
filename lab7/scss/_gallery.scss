@@ -1,3 +1,4 @@
+
 @use 'tokens' as t;
 @use 'mixins' as m;
 @use 'sass:map';
@@ -8,7 +9,7 @@
   gap: 22px;
 }
 
-.card {
+.gallery__card {
   position: relative;
   height: 390px;
   min-width: 0;
@@ -16,7 +17,7 @@
   animation: appear 0.6s ease both;
 }
 
-.card-inner {
+.gallery__card-inner {
   position: relative;
   width: 100%;
   height: 100%;
@@ -24,12 +25,12 @@
   transition: transform 0.7s ease;
 }
 
-.card.flipped .card-inner {
+.gallery__card--flipped .gallery__card-inner {
   transform: rotateY(180deg);
 }
 
-.card-front,
-.card-back {
+.gallery__card-front,
+.gallery__card-back {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -42,14 +43,14 @@
   -webkit-backface-visibility: hidden;
 }
 
-.card-front {
+.gallery__card-front {
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
 }
 
-.card-front img {
+.gallery__card-front img {
   display: block;
   width: 100%;
   height: 275px;
@@ -58,13 +59,13 @@
   background: #0b1120;
 }
 
-.card-front h3 {
+.gallery__card-front h3 {
   text-align: center;
   padding: 10px;
   font-size: 21px;
 }
 
-.card-back {
+.gallery__card-back {
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
@@ -76,19 +77,19 @@
   overflow-wrap: anywhere;
 }
 
-.card-back h3 {
+.gallery__card-back h3 {
   color: #a5b4fc;
   margin-bottom: 15px;
   flex-shrink: 0;
 }
 
-.card-back p {
+.gallery__card-back p {
   margin-bottom: 10px;
   color: var(--muted);
   flex-shrink: 0;
 }
 
-.card > .flipButton {
+.gallery__flip-button {
   position: absolute;
   z-index: 5;
   bottom: 12px;
@@ -96,6 +97,13 @@
   transform: translateX(-50%);
   min-width: 110px;
   white-space: nowrap;
+  border: none;
+  border-radius: map.get(t.$radii, small);
+  padding: 10px 16px;
+  background: var(--accent);
+  color: #111827;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 @keyframes appear {

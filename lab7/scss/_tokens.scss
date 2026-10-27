@@ -1,3 +1,4 @@
+
 @use 'sass:map';
 
 $colors: (
@@ -24,4 +25,10 @@ $breakpoints: (
   --text: #{map.get($colors, text)};
   --muted: #{map.get($colors, muted)};
   --accent: #{map.get($colors, accent)};
+
+  --radius-small: #{map.get($radii, small)};
+  --radius-medium: #{map.get($radii, medium)};
+
+  --breakpoint-tablet: #{map.get($breakpoints, tablet)};
+  --breakpoint-mobile: #{map.get($breakpoints, mobile)};
 }

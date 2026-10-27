@@ -1,5 +1,7 @@
 
 @use 'tokens' as t;
+@use 'mixins' as m;
+@use 'functions' as f;
 
 * {
   margin: 0;
@@ -32,14 +34,22 @@ button {
 #about {
   width: 90%;
   max-width: 1200px;
-  margin: 40px auto;
+  margin: f.rem(40px) auto;
   scroll-margin-top: 80px;
 }
 
 section > h2 {
   text-align: center;
-  margin-bottom: 25px;
-  font-size: 28px;
+  margin-bottom: f.rem(25px);
+  font-size: f.rem(28px);
+}
+
+@include m.respond(mobile) {
+  #gallery,
+  #video,
+  #about {
+    width: 95%;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

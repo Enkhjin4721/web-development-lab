@@ -1,4 +1,8 @@
 
+@use 'tokens' as t;
+@use 'functions' as f;
+@use 'sass:map';
+
 .trailer {
   max-width: 850px;
   margin: auto;
@@ -9,19 +13,19 @@
   width: 100%;
   aspect-ratio: 16 / 9;
   border: none;
-  border-radius: 10px;
+  border-radius: map.get(t.$radii, medium);
 }
 
 #video p {
   text-align: center;
-  margin-top: 15px;
+  margin-top: f.rem(15px);
 }
 
 #about {
   text-align: center;
-  padding: 28px;
+  padding: f.rem(28px);
   background: #e2e8f0;
-  border-radius: 12px;
+  border-radius: map.get(t.$radii, medium);
 }
 
 #about p {

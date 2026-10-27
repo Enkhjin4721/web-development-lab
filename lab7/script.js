@@ -1,6 +1,6 @@
 
 const themeButton = document.getElementById("themeButton");
-const flipButtons = document.querySelectorAll(".flipButton");
+const flipButtons = document.querySelectorAll(".gallery__flip-button");
 
 // Change dark and light mode
 if (localStorage.getItem("theme") === "dark") {
@@ -32,8 +32,8 @@ function updateThemeButton() {
 // Flip movie cards
 flipButtons.forEach(function (button) {
     button.addEventListener("click", function () {
-        const card = button.closest(".card");
-        const isFlipped = card.classList.toggle("flipped");
+        const card = button.closest(".gallery__card");
+        const isFlipped = card.classList.toggle("gallery__card--flipped");
 
         button.textContent = isFlipped ? "Буцаах" : "Эргүүлэх";
     });

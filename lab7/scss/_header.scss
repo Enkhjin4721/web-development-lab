@@ -1,6 +1,7 @@
 
 @use 'tokens' as t;
 @use 'functions' as f;
+@use 'mixins' as m;
 @use 'sass:map';
 
 header,
@@ -17,18 +18,18 @@ header p {
 }
 
 #themeButton,
-.flipButton {
+.gallery__flip-button {
   border: none;
   border-radius: map.get(t.$radii, small);
   padding: 10px 16px;
   background: var(--accent);
   color: f.contrast(map.get(t.$colors, accent));
   font-weight: bold;
+  cursor: pointer;
 }
 
 nav {
-  display: flex;
-  justify-content: center;
+  @include m.flex-center;
   flex-wrap: wrap;
   gap: 12px;
   padding: 14px;
