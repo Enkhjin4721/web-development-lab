@@ -1,0 +1,13 @@
+
+@use 'tokens' as t;
+@use 'sass:map';
+
+@each $name, $value in t.$colors {
+  .text-#{$name} {
+    color: $value;
+  }
+
+  .bg-#{$name} {
+    background-color: $value;
+  }
+}

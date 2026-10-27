@@ -1,0 +1,54 @@
+
+@use 'tokens' as t;
+@use 'functions' as f;
+@use 'sass:map';
+
+header,
+footer {
+  text-align: center;
+  padding: 28px 15px;
+  color: white;
+  background: linear-gradient(135deg, #172554, #312e81);
+}
+
+header p {
+  margin: 8px 0 15px;
+  color: #c7d2fe;
+}
+
+#themeButton,
+.flipButton {
+  border: none;
+  border-radius: map.get(t.$radii, small);
+  padding: 10px 16px;
+  background: var(--accent);
+  color: f.contrast(map.get(t.$colors, accent));
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 14px;
+  background: #1e293b;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background: #3730a3;
+}
+
+footer {
+  margin-top: 45px;
+}

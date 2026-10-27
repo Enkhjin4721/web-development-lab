@@ -1,0 +1,39 @@
+
+.trailer {
+  max-width: 850px;
+  margin: auto;
+}
+
+.trailer iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 10px;
+}
+
+#video p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+#about {
+  text-align: center;
+  padding: 28px;
+  background: #e2e8f0;
+  border-radius: 12px;
+}
+
+#about p {
+  max-width: 800px;
+  margin: auto;
+}
+
+body.dark #about {
+  background: var(--card);
+  border: 1px solid #374151;
+}
+
+body.dark #about p {
+  color: var(--muted);
+}

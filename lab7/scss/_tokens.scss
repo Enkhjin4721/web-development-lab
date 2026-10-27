@@ -1,0 +1,27 @@
+@use 'sass:map';
+
+$colors: (
+  bg: #111827,
+  card: #1e293b,
+  text: #e5e7eb,
+  muted: #cbd5e1,
+  accent: #818cf8
+);
+
+$radii: (
+  small: 6px,
+  medium: 12px
+);
+
+$breakpoints: (
+  tablet: 900px,
+  mobile: 550px
+);
+
+:root {
+  --bg: #{map.get($colors, bg)};
+  --card: #{map.get($colors, card)};
+  --text: #{map.get($colors, text)};
+  --muted: #{map.get($colors, muted)};
+  --accent: #{map.get($colors, accent)};
+}

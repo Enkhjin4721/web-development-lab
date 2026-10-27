@@ -1,0 +1,25 @@
+{
+  "name": "web-development-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass:build": "sass lab7/scss/main.scss lab7/style.css --style=compressed",
+    "sass:watch": "sass --watch lab7/scss/main.scss:lab7/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Enkhjin4721/web-development-lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Enkhjin4721/web-development-lab/issues"
+  },
+  "homepage": "https://github.com/Enkhjin4721/web-development-lab#readme",
+  "devDependencies": {
+    "sass": "^1.106.1"
+  }
+}
