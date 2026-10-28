@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movie News - Bootstrap</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-theme="light">
+
+    <header class="bg-dark text-white text-center p-4">
+        <h1>Movie News</h1>
+        <p>Кино ертөнцийн шинэ мэдээ</p>
+        <button id="themeButton" class="btn btn-brand">Dark Mode</button>
+    </header>
+
+    <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Movie News</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#home">Нүүр</a>
+                    <a class="nav-link" href="#gallery">Кинонууд</a>
+                    <a class="nav-link" href="#contact">Холбоо барих</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="home" class="container py-4">
+        <section id="gallery" class="mb-5">
+            <h2 class="text-center mb-4">Шинэ болон онцлох кинонууд</h2>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <article class="card h-100">
+                        <img src="../img/avatar.jpg" class="card-img-top movie-image" alt="Avatar кино">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Avatar</h3>
+                            <p class="card-text">2009 · Шинжлэх ухааны уран зөгнөлт, адал явдалт.</p>
+                            <button class="btn btn-brand" data-bs-toggle="collapse" data-bs-target="#movie1">Дэлгэрэнгүй</button>
+                            <p class="collapse mt-3" id="movie1">Найруулагч: James Cameron. Жейк Салли Пандора гаригийн На'ви ард түмэнтэй танилцана.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-4">
+                    <article class="card h-100">
+                        <img src="../img/avengers.jpg" class="card-img-top movie-image" alt="Avengers Endgame кино">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Avengers: Endgame</h3>
+                            <p class="card-text">2019 · Адал явдалт, шинжлэх ухааны уран зөгнөлт.</p>
+                            <button class="btn btn-brand" data-bs-toggle="collapse" data-bs-target="#movie2">Дэлгэрэнгүй</button>
+                            <p class="collapse mt-3" id="movie2">Найруулагч: Anthony Russo, Joe Russo. Супер баатрууд алдсан бүхнээ буцаахын тулд нэгдэнэ.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-4">
+                    <article class="card h-100">
+                        <img src="../img/batman.jpg" class="card-img-top movie-image" alt="The Batman кино">
+                        <div class="card-body">
+                            <h3 class="card-title h5">The Batman</h3>
+                            <p class="card-text">2022 · Гэмт хэрэг, тулаант, драм.</p>
+                            <button class="btn btn-brand" data-bs-toggle="collapse" data-bs-target="#movie3">Дэлгэрэнгүй</button>
+                            <p class="collapse mt-3" id="movie3">Найруулагч: Matt Reeves. Бэтмен Готэм хотын нууцлаг гэмт хэргүүдийг мөрдөнө.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-4">
+                    <article class="card h-100">
+                        <img src="../img/interstellar.jpg" class="card-img-top movie-image" alt="Interstellar кино">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Interstellar</h3>
+                            <p class="card-text">2014 · Шинжлэх ухааны уран зөгнөлт, драм.</p>
+                            <button class="btn btn-brand" data-bs-toggle="collapse" data-bs-target="#movie4">Дэлгэрэнгүй</button>
+                            <p class="collapse mt-3" id="movie4">Найруулагч: Christopher Nolan. Судлаачид хүн төрөлхтөнд амьдрах шинэ гариг хайна.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-4">
+                    <article class="card h-100">
+                        <img src="../img/harrypotter.jpg" class="card-img-top movie-image" alt="Harry Potter кино">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Harry Potter</h3>
+                            <p class="card-text">2001 · Уран зөгнөлт, адал явдалт.</p>
+                            <button class="btn btn-brand" data-bs-toggle="collapse" data-bs-target="#movie5">Дэлгэрэнгүй</button>
+                            <p class="collapse mt-3" id="movie5">Найруулагч: Chris Columbus. Харри Поттер Хогвартсын ид шидийн сургуульд суралцана.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-4">
+                    <article class="card h-100">
+                        <img src="../img/horror.jpg" class="card-img-top movie-image" alt="Аймшгийн төрлийн кино">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Horror Movies</h3>
+                            <p class="card-text">Аймшгийн киноны төрөл.</p>
+                            <button class="btn btn-brand" data-bs-toggle="collapse" data-bs-target="#movie6">Дэлгэрэнгүй</button>
+                            <p class="collapse mt-3" id="movie6">Нууцлаг үйл явдал, түгшүүр болон гэнэтийн эргэлтээрээ онцлог.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mx-auto mb-5" style="max-width: 600px;">
+            <h2 class="text-center mb-4">Санал хүсэлт</h2>
+
+            <form id="feedbackForm" class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label for="userName" class="form-label">Нэр</label>
+                    <input type="text" class="form-control" id="userName" required minlength="2">
+                    <div class="invalid-feedback">Нэрээ дор хаяж 2 тэмдэгтээр оруулна уу.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="userEmail" class="form-label">И-мэйл</label>
+                    <input type="email" class="form-control" id="userEmail" required>
+                    <div class="invalid-feedback">Зөв и-мэйл хаяг оруулна уу.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="userMessage" class="form-label">Санал хүсэлт</label>
+                    <textarea class="form-control" id="userMessage" rows="4" required minlength="5"></textarea>
+                    <div class="invalid-feedback">Санал хүсэлтээ дор хаяж 5 тэмдэгтээр бичнэ үү.</div>
+                </div>
+
+                <button type="submit" class="btn btn-brand">Илгээх</button>
+                <p id="formMessage" class="mt-3" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3">
+        <p class="mb-0">Movie News | Лабораторийн ажил 8</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const themeButton = document.getElementById("themeButton");
+
+        if (localStorage.getItem("bootstrap-theme") === "dark") {
+            document.body.setAttribute("data-bs-theme", "dark");
+        }
+
+        updateThemeButton();
+
+        themeButton.addEventListener("click", function () {
+            const currentTheme = document.body.getAttribute("data-bs-theme");
+            const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+            document.body.setAttribute("data-bs-theme", newTheme);
+            localStorage.setItem("bootstrap-theme", newTheme);
+            updateThemeButton();
+        });
+
+        function updateThemeButton() {
+            const isDark = document.body.getAttribute("data-bs-theme") === "dark";
+            themeButton.textContent = isDark ? "Light Mode" : "Dark Mode";
+        }
+
+        const feedbackForm = document.getElementById("feedbackForm");
+
+        feedbackForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            feedbackForm.classList.add("was-validated");
+
+            if (feedbackForm.checkValidity()) {
+                document.getElementById("formMessage").textContent =
+                    "Санал хүсэлтийг шалгалтад амжилттай орууллаа.";
+                feedbackForm.reset();
+                feedbackForm.classList.remove("was-validated");
+            } else {
+                document.getElementById("formMessage").textContent = "";
+            }
+        });
+    </script>
+</body>
+</html>

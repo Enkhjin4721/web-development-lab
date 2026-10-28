@@ -1,0 +1,39 @@
+
+:root {
+    --color-brand: #6366f1;
+    --color-brand-hover: #4f46e5;
+}
+
+.btn-brand {
+    background-color: var(--color-brand);
+    color: white;
+    border: none;
+}
+
+.btn-brand:hover {
+    background-color: var(--color-brand-hover);
+    color: white;
+}
+
+.movie-image {
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+    background-color: #0b1120;
+}
+
+.card {
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+body {
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: 30px;
+}

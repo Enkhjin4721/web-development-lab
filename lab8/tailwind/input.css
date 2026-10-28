@@ -1,0 +1,12 @@
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-brand: #3b82f6;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}

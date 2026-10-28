@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/Enkhjin4721/web-development-lab#readme",
   "devDependencies": {
-    "sass": "^1.106.1"
+    "@tailwindcss/cli": "^4.3.3",
+    "sass": "^1.106.1",
+    "tailwindcss": "^4.3.3"
   }
 }
